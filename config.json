@@ -1,0 +1,7 @@
+{
+    "userDetail": {
+        "name": "Nom et Prénom",
+        "company": "Entreprise",
+        "status": true
+    }
+}
