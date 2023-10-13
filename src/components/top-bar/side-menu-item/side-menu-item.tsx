@@ -1,16 +1,16 @@
 import { FunctionComponent } from "react";
 import Image from 'next/image';
-import { MenuItemProps } from "@/types/props";
+import { SideMenuItemProps } from "@/types/props";
 import { poppins } from "@/styles/fonts";
-import StyledMenuItems from "./style";
+import StyledSideMenuItem from "./style";
 import Link from "next/link";
 
 
-const MenuItem: FunctionComponent<MenuItemProps> = ({
+const SideMenuItem: FunctionComponent<SideMenuItemProps> = ({
     items
 }) => {
     return (
-        <StyledMenuItems className="menu-items__wrapper">
+        <StyledSideMenuItem className="menu-items__wrapper">
             <nav>
                 <ul>
                     {
@@ -35,8 +35,8 @@ const MenuItem: FunctionComponent<MenuItemProps> = ({
                     }
                 </ul>
             </nav>
-        </StyledMenuItems>
+        </StyledSideMenuItem>
     )
 }
 
-export default MenuItem;
+export default SideMenuItem;

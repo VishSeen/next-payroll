@@ -12,10 +12,10 @@ export type TopBarProps = {
     name?: string;
 }
 
-export type MenuSideProps = {
+export type SideMenuProps = {
     isOpened: boolean;
 }
 
-export type MenuItemProps = {
+export type SideMenuItemProps = {
     items: typeMenuItem[];
 }

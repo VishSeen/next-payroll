@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-const StyledMenuSide = styled.div`
+const StyledSideMenu = styled.div`
     display: none;
     width: 100%;
     height: 100vh;
@@ -36,4 +36,4 @@ const StyledMenuSide = styled.div`
 `;
 
 
-export default StyledMenuSide;
+export default StyledSideMenu;

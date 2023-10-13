@@ -9,7 +9,7 @@ import StyledWrapper from "./style";
 
 import ic_menu from '../../../public/svg/Burger button.svg'
 import Image from "next/image";
-import MenuSide from "./menu-side/menu-side";
+import SideMenu from "./side-menu/side-menu";
 
 
 
@@ -49,7 +49,7 @@ const TopBar: FunctionComponent<TopBarProps> = ({
                 </div>
             </div>
 
-            <MenuSide isOpened={opened}/>
+            <SideMenu isOpened={opened}/>
         </StyledWrapper>
     )
 }

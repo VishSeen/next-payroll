@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-const StyledMenuItems = styled.div`
+const StyledSideMenuItem = styled.div`
     width: 100%;
 
     ul {
@@ -45,4 +45,4 @@ const StyledMenuItems = styled.div`
 `;
 
 
-export default StyledMenuItems;
+export default StyledSideMenuItem;
