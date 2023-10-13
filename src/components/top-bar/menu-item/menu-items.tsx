@@ -19,7 +19,7 @@ const MenuItem: FunctionComponent<MenuItemProps> = ({
                                 <Link href={item?.href} key={i}>
                                     <button>
                                         <Image
-                                            src={`/svg/${item?.image?.src}`}
+                                            src={`/svg/side-bar-overlay/${item?.image?.src}`}
                                             alt={item?.image?.alt as string}
                                             width={74}
                                             height={99}
