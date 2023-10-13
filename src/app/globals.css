@@ -8,3 +8,20 @@
 body {
   background-color: #E5E5E5
 }
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+button:hover {
+    cursor: pointer;
+}
+
+
+li {
+    list-style: none;
+}

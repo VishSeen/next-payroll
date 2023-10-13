@@ -1,4 +1,4 @@
-import { Img } from "./type";
+import { Img, typeMenuItem } from "./type";
 
 export type UserPanelProps = {
     name: string;
@@ -10,4 +10,12 @@ export type UserPanelProps = {
 
 export type TopBarProps = {
     name?: string;
+}
+
+export type MenuSideProps = {
+    isOpened: boolean;
+}
+
+export type MenuItemProps = {
+    items: typeMenuItem[];
 }
