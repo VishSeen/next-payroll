@@ -22,7 +22,7 @@ const SideMenu: FunctionComponent<SideMenuProps> = ({
                     />
                 </div>
 
-                <SideMenuItem items={config?.ui?.menuItems} />
+                <SideMenuItem items={config?.ui?.sideBar?.menuItems} />
             </div>
         </StyledSideMenuOverlay>
     )

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-const StyledButton = styled.div`
+const StyledSideButton = styled.div`
     &.button__wrapper {
         width: 200px;
         height: 66px;
@@ -13,7 +13,7 @@ const StyledButton = styled.div`
             border-bottom: 2px solid #0084E1;
         }
 
-        button {
+        a, button {
             height: 100%;
             width: 100%;
             display: flex;
@@ -23,6 +23,7 @@ const StyledButton = styled.div`
             img {
                 margin-right: 25px;
             }
+
             span {
                 color: #FFF;
                 text-align: center;
@@ -35,4 +36,4 @@ const StyledButton = styled.div`
     }
 `;
 
-export default StyledButton;
+export default StyledSideButton;

@@ -6,6 +6,7 @@ import UserPanel from "./user-panel/user-panel";
 import config from "../../../config.json";
 import userImage from "../../../public/image/user.png"
 import StyledWrapper from "./style";
+import Button from "./button/button";
 
 
 
@@ -15,25 +16,29 @@ const TopBar: FunctionComponent<TopBarProps> = ({
     name
 }) => {
 
-
-
     return (
         <StyledWrapper className="top-bar__wrapper">
-            <div className="top-bar">
-                <div className="top-bar__details">
-                    <div className="left-bar"></div>
+            <div className="left-bar"></div>
 
-                    <div className="right-bar">
-                        <UserPanel
-                            name={config?.userDetail?.name}
-                            company={config?.userDetail?.company}
-                            image={userImage}
-                            status={config?.userDetail?.status}
-                        />
-                    </div>
+            <div className="right-bar">
+                <div className="setting-buttons">
+                    <Button
+                        icon={`/svg/top-bar/${config?.ui?.topBar?.settingButtons[0]?.src}`}
+                        alt={config?.ui?.topBar?.settingButtons[0]?.alt}
+                    />
+
+                    <Button
+                        icon={`/svg/top-bar/${config?.ui?.topBar?.settingButtons[1]?.src}`}
+                        alt={config?.ui?.topBar?.settingButtons[1]?.alt}
+                    />
                 </div>
+                <UserPanel
+                    name={config?.ui?.topBar?.userDetail?.name}
+                    company={config?.ui?.topBar?.userDetail?.company}
+                    image={userImage}
+                    status={config?.ui?.topBar?.userDetail?.status}
+                />
             </div>
-
         </StyledWrapper>
     )
 }

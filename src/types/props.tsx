@@ -20,9 +20,17 @@ export type SideMenuItemProps = {
     items: typeMenuItem[];
 }
 
-export type ButtonProps = {
-    click?: () => void;
+export type SideButtonProps = {
     text?: string;
     icon?: string;
     isBlue: boolean;
+    href?: string;
+    click?: () => void;
+}
+
+
+export type ButtonProps = {
+    icon: string;
+    alt: string;
+    click?: () => {}
 }

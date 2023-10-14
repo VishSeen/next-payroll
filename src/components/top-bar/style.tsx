@@ -6,19 +6,24 @@ const StyledWrapper = styled.div`
     left: 200px;
     right: 0;
     top: 0;
-    .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 66px;
+    width: auto;
+    padding: 12px 33px;
+
+
+    .right-bar {
         display: flex;
         align-items: center;
-        background-color: #fff;
-        height: 66px;
-    }
+        gap: 31px;
 
-
-
-    .top-bar__details {
-        padding: 12px 33px;
-        display: flex;
-        justify-content: space-between;
+        .setting-buttons {
+            display: flex;
+            gap: 10px;
+        }
     }
 `;
 

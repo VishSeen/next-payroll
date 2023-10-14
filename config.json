@@ -1,99 +1,114 @@
 {
-    "userDetail": {
-        "name": "Nom et Prénom",
-        "company": "Entreprise",
-        "status": true
-    },
+
     "ui": {
-        "menuItems": [
-            {
-                "title": "Planning",
-                "href": "planning",
-                "image": {
-                    "src": "ic-planning.svg",
-                    "alt": "Icon Planning"
+        "topBar": {
+            "settingButtons": [
+                {
+                    "src": "ic-help.svg",
+                    "alt": "Icon Help"
+                },
+                {
+                    "src": "ic-settings.svg",
+                    "alt": "Icon Settings"
                 }
-            },
-            {
-                "title": "Absences",
-                "href": "absence",
-                "image": {
-                    "src": "ic-absence.svg",
-                    "alt": "Icon absence"
-                }
-            },
-            {
-                "title": "Heures",
-                "href": "heures",
-                "image": {
-                    "src": "ic-heures.svg",
-                    "alt": "Icon Heures"
-                }
-            },
-            {
-                "title": "Note de frais",
-                "href": "note-frais",
-                "image": {
-                    "src": "ic-note-frais.svg",
-                    "alt": "Icon Note de frais"
-                }
-            },
-            {
-                "title": "Présence",
-                "href": "presence",
-                "image": {
-                    "src": "ic-presence.svg",
-                    "alt": "Icon Présence"
-                }
-            },
-            {
-                "title": "Compétences",
-                "href": "competences",
-                "image": {
-                    "src": "ic-competences.svg",
-                    "alt": "Icon Compétences"
-                }
-            },
-            {
-                "title": "Salaire et paie",
-                "href": "salary",
-                "image": {
-                    "src": "ic-salary.svg",
-                    "alt": "Icon Salaire et paie"
-                }
-            },
-            {
-                "title": "Entretiens",
-                "href": "entretien",
-                "image": {
-                    "src": "ic-entretien.svg",
-                    "alt": "Icon Entretiens"
-                }
-            },
-            {
-                "title": "Matériels",
-                "href": "material",
-                "image": {
-                    "src": "ic-material.svg",
-                    "alt": "Icon Matériels"
-                }
-            },
-            {
-                "title": "Documents",
-                "href": "document",
-                "image": {
-                    "src": "ic-document.svg",
-                    "alt": "Icon Documents"
-                }
-            },
-            {
-                "title": "RH",
-                "href": "rh",
-                "image": {
-                    "src": "ic-rh.svg",
-                    "alt": "Icon RH"
-                }
+            ],
+            "userDetail": {
+                "name": "Nom et Prénom",
+                "company": "Entreprise",
+                "status": true
             }
-        ]
+        },
+        "sideBar": {
+            "menuItems": [
+                {
+                    "title": "Planning",
+                    "href": "planning",
+                    "image": {
+                        "src": "ic-planning.svg",
+                        "alt": "Icon Planning"
+                    }
+                },
+                {
+                    "title": "Absences",
+                    "href": "absence",
+                    "image": {
+                        "src": "ic-absence.svg",
+                        "alt": "Icon absence"
+                    }
+                },
+                {
+                    "title": "Heures",
+                    "href": "heures",
+                    "image": {
+                        "src": "ic-heures.svg",
+                        "alt": "Icon Heures"
+                    }
+                },
+                {
+                    "title": "Note de frais",
+                    "href": "note-frais",
+                    "image": {
+                        "src": "ic-note-frais.svg",
+                        "alt": "Icon Note de frais"
+                    }
+                },
+                {
+                    "title": "Présence",
+                    "href": "presence",
+                    "image": {
+                        "src": "ic-presence.svg",
+                        "alt": "Icon Présence"
+                    }
+                },
+                {
+                    "title": "Compétences",
+                    "href": "competences",
+                    "image": {
+                        "src": "ic-competences.svg",
+                        "alt": "Icon Compétences"
+                    }
+                },
+                {
+                    "title": "Salaire et paie",
+                    "href": "salary",
+                    "image": {
+                        "src": "ic-salary.svg",
+                        "alt": "Icon Salaire et paie"
+                    }
+                },
+                {
+                    "title": "Entretiens",
+                    "href": "entretien",
+                    "image": {
+                        "src": "ic-entretien.svg",
+                        "alt": "Icon Entretiens"
+                    }
+                },
+                {
+                    "title": "Matériels",
+                    "href": "material",
+                    "image": {
+                        "src": "ic-material.svg",
+                        "alt": "Icon Matériels"
+                    }
+                },
+                {
+                    "title": "Documents",
+                    "href": "document",
+                    "image": {
+                        "src": "ic-document.svg",
+                        "alt": "Icon Documents"
+                    }
+                },
+                {
+                    "title": "RH",
+                    "href": "rh",
+                    "image": {
+                        "src": "ic-rh.svg",
+                        "alt": "Icon RH"
+                    }
+                }
+            ]
+        }
     }
 }
