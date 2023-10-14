@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 
 const StyledWrapper = styled.div`
+    position: fixed;
+    left: 200px;
+    right: 0;
+    top: 0;
     .top-bar {
         display: flex;
         align-items: center;
@@ -9,16 +13,7 @@ const StyledWrapper = styled.div`
         height: 66px;
     }
 
-    .top-bar__menu {
-        width: 200px;
-        height: 100%;
 
-        button {
-            height: 100%;
-            width: 100%;
-            border-right: 2px solid #fafafa;
-        }
-    }
 
     .top-bar__details {
         padding: 12px 33px;

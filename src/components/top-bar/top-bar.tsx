@@ -7,34 +7,19 @@ import config from "../../../config.json";
 import userImage from "../../../public/image/user.png"
 import StyledWrapper from "./style";
 
-import ic_menu from '../../../public/svg/Burger button.svg'
-import Image from "next/image";
-import SideMenu from "./side-menu/side-menu";
+
 
 
 
 const TopBar: FunctionComponent<TopBarProps> = ({
     name
 }) => {
-    const [opened, setOpened] = useState<boolean>(false)
 
-    const icMenuClick = () => {
-        setOpened(!opened)
-    }
 
 
     return (
         <StyledWrapper className="top-bar__wrapper">
             <div className="top-bar">
-                <div className="top-bar__menu">
-                    <button onClick={icMenuClick}>
-                        <Image
-                            src={ic_menu}
-                            alt="icon burger menu"
-                        />
-                    </button>
-                </div>
-
                 <div className="top-bar__details">
                     <div className="left-bar"></div>
 
@@ -49,7 +34,6 @@ const TopBar: FunctionComponent<TopBarProps> = ({
                 </div>
             </div>
 
-            <SideMenu isOpened={opened}/>
         </StyledWrapper>
     )
 }

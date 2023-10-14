@@ -2,6 +2,7 @@ import { poppins } from '@/styles/fonts'
 import './globals.css'
 import type { Metadata } from 'next'
 import TopBar from '@/components/top-bar/top-bar'
+import SideBar from '@/components/side-bar/side-bar'
 
 
 export const metadata: Metadata = {
@@ -16,8 +17,10 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body style={poppins.style}>
+            <body>
                 <TopBar />
+
+                <SideBar />
 
                 {children}
             </body>

@@ -2,10 +2,12 @@ import styled from 'styled-components';
 
 
 const StyledWrapper = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    border-left: 1px solid #858585;
+    &.user-panel {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-left: 1px solid #858585;
+    }
 
     .user-panel__info {
         display: flex;
