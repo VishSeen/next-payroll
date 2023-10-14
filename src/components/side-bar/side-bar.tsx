@@ -2,13 +2,13 @@
 
 import { FunctionComponent, useState } from "react"
 import StyledSideBar from "./style";
-import ic_menu from '../../../public/svg/side-bar-button/burger.svg';
-import ic_add from '../../../public/svg/side-bar-button/add.svg';
-import ic_accueil from '../../../public/svg/side-bar-button/accueil.svg';
-
 import Image from "next/image";
 import SideMenu from "./side-menu-overlay/side-menu-overlay";
 import Button from "./button/button";
+import ic_menu from '../../../public/svg/side-bar-button/burger.svg';
+import ic_add from '../../../public/svg/side-bar-button/add.svg';
+import ic_accueil from '../../../public/svg/side-bar-button/accueil.svg';
+import ic_graphic from '../../../public/svg/side-bar/graphic.svg';
 
 
 const SideBar:FunctionComponent = () => {
@@ -27,8 +27,13 @@ const SideBar:FunctionComponent = () => {
             <Button isBlue={true} text="Ajouter" icon={ic_add}/>
 
 
-
             <SideMenu isOpened={opened} />
+
+            <Image
+                className="img-background"
+                src={ic_graphic}
+                alt="Side bar graphic background"
+            />
 
         </StyledSideBar>
     )
