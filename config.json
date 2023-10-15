@@ -108,6 +108,41 @@
                         "alt": "Icon RH"
                     }
                 }
+            ],
+            "navItems": [
+                {
+                    "title":"Mon Espace"
+                },
+                {
+                    "title": "Validation"
+                },
+                {
+                    "title": "Indicateurs"
+                },
+                {
+                    "title": "Soldes",
+                    "items": [
+                        {
+                            "title": "Gestion des soldes",
+                            "path": ""
+                        },
+                        {
+                            "title": "Ajuster un solde",
+                            "path": ""
+                        },
+                        {
+                            "title": "Compteurs",
+                            "path": ""
+                        },
+                        {
+                            "title": "Historique",
+                            "path": ""
+                        }
+                    ]
+                },
+                {
+                    "title": "Recherche"
+                }
             ]
         }
     }
