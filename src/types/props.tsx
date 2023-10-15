@@ -34,3 +34,9 @@ export type ButtonProps = {
     alt: string;
     click?: () => {}
 }
+
+
+export type FormProps = {
+    isOpened: boolean;
+    handleValidation: () => void;
+}
