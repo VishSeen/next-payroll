@@ -46,7 +46,7 @@
                 },
                 {
                     "title": "Note de frais",
-                    "href": "note-frais",
+                    "href": "note-de-frais",
                     "image": {
                         "src": "ic-note-frais.svg",
                         "alt": "Icon Note de frais"
@@ -70,7 +70,7 @@
                 },
                 {
                     "title": "Salaire et paie",
-                    "href": "salary",
+                    "href": "salaire-et-paie",
                     "image": {
                         "src": "ic-salary.svg",
                         "alt": "Icon Salaire et paie"
@@ -78,7 +78,7 @@
                 },
                 {
                     "title": "Entretiens",
-                    "href": "entretien",
+                    "href": "entretiens",
                     "image": {
                         "src": "ic-entretien.svg",
                         "alt": "Icon Entretiens"
