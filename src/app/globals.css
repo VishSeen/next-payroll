@@ -9,6 +9,13 @@ body {
   background-color: #E5E5E5
 }
 
+main {
+    height: 100vh;
+    padding: 31px;
+    margin-left: 200px;
+    margin-top: 66px;
+}
+
 a {
     text-decoration: none;
 }

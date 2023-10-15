@@ -8,12 +8,18 @@ const StyledSideBar = styled.div`
     left: 0;
     top: 0;
     bottom: 0;
-    background: linear-gradient(180deg, #094694 0%, #0096FF 134.71%);
+
     .img-background {
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
+    }
+
+
+    .side-bar__nav-content {
+        height: 100%;
+        background: linear-gradient(180deg, #094694 0%, #0096FF 134.71%);
     }
 `;
 

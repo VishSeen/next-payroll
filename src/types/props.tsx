@@ -1,4 +1,4 @@
-import { Img, typeMenuItem } from "./type";
+import { Img, NavItem, NavSubItem, typeMenuItem } from "./type";
 
 export type UserPanelProps = {
     name: string;
@@ -39,4 +39,16 @@ export type ButtonProps = {
 export type FormProps = {
     isOpened: boolean;
     handleValidation: () => void;
+}
+
+
+export type SideNavProps = {
+    navItems: NavItem[]
+}
+
+export type AccordionProps = {
+    title: string;
+    icon?: string | null;
+    hasArrow: boolean;
+    subItems?: NavSubItem[];
 }

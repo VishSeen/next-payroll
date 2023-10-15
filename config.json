@@ -30,7 +30,7 @@
                 },
                 {
                     "title": "Absences",
-                    "href": "absence",
+                    "href": "absences",
                     "image": {
                         "src": "ic-absence.svg",
                         "alt": "Icon absence"
@@ -111,24 +111,46 @@
             ],
             "navItems": [
                 {
-                    "title":"Mon Espace"
+                    "title":"Mon Espace",
+                    "icon": null,
+                    "items": [
+                        {
+                            "title": "Sous Module",
+                            "path": "/"
+                        }
+                    ]
                 },
                 {
-                    "title": "Validation"
+                    "title": "Validation",
+                    "icon": "done",
+                    "items": [
+                        {
+                            "title": "Sous Module",
+                            "path": "/"
+                        }
+                    ]
                 },
                 {
-                    "title": "Indicateurs"
+                    "title": "Indicateurs",
+                    "icon": "list",
+                    "items": [
+                        {
+                            "title": "Sous Module",
+                            "path": "/"
+                        }
+                    ]
                 },
                 {
                     "title": "Soldes",
+                    "icon": "balance",
                     "items": [
                         {
                             "title": "Gestion des soldes",
-                            "path": ""
+                            "path": "/absences/soldes/gestion-des-soldes"
                         },
                         {
                             "title": "Ajuster un solde",
-                            "path": ""
+                            "path": "/absences/soldes/ajuster-un-solde"
                         },
                         {
                             "title": "Compteurs",
@@ -141,7 +163,14 @@
                     ]
                 },
                 {
-                    "title": "Recherche"
+                    "title": "Recherche",
+                    "icon": "search",
+                    "items": [
+                        {
+                            "title": "Sous Module",
+                            "path": "/"
+                        }
+                    ]
                 }
             ]
         }
