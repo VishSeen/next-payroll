@@ -9,6 +9,7 @@ import ic_menu from '../../../public/svg/side-bar-button/burger.svg';
 import ic_add from '../../../public/svg/side-bar-button/add.svg';
 import ic_accueil from '../../../public/svg/side-bar-button/accueil.svg';
 import ic_graphic from '../../../public/svg/side-bar/graphic.svg';
+import { poppins } from "@/styles/fonts";
 
 
 const SideBar:FunctionComponent = () => {
@@ -19,7 +20,7 @@ const SideBar:FunctionComponent = () => {
     }
 
     return(
-        <StyledSideBar className="side-bar__wrapper">
+        <StyledSideBar className="side-bar__wrapper" >
             <Button icon={ic_menu} isBlue={false} click={icMenuClick}/>
 
             <Button isBlue={true} href="/" text="Accueil" icon={ic_accueil}/>

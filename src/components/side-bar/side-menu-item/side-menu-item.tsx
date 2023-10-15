@@ -25,7 +25,7 @@ const SideMenuItem: FunctionComponent<SideMenuItemProps> = ({
                                             height={99}
                                         />
 
-                                        <p>
+                                        <p style={poppins.style}>
                                             {item?.title}
                                         </p>
                                     </button>

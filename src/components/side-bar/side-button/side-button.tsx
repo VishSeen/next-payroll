@@ -3,6 +3,7 @@ import Image from "next/image";
 import { SideButtonProps } from "@/types/props";
 import StyledSideButton from "./style";
 import Link from "next/link";
+import { poppins } from "@/styles/fonts";
 
 const Button: FunctionComponent<SideButtonProps> = ({
     text,
@@ -26,7 +27,7 @@ const Button: FunctionComponent<SideButtonProps> = ({
                         }
                         {
                             text && (
-                                <span>
+                                <span  style={poppins.style}>
                                     {text}
                                 </span>
                             )
@@ -45,7 +46,7 @@ const Button: FunctionComponent<SideButtonProps> = ({
                             }
                             {
                                 text && (
-                                    <span>
+                                    <span  style={poppins.style}>
                                         {text}
                                     </span>
                                 )
