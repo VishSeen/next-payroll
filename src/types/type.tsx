@@ -23,3 +23,12 @@ export type NavSubItem = {
 export type SvgElement = {
     color?: string;
 }
+
+export type TableData = {
+    users: string;
+    category: string;
+    period: number;
+    actual: number;
+    taken: number;
+    future: number;
+}

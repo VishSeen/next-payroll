@@ -1,4 +1,4 @@
-import { Img, NavItem, NavSubItem, typeMenuItem } from "./type";
+import { Img, NavItem, NavSubItem, TableData, typeMenuItem } from "./type";
 
 export type UserPanelProps = {
     name: string;
@@ -52,4 +52,12 @@ export type AccordionProps = {
     icon?: string | null;
     hasArrow: boolean;
     subItems?: NavSubItem[];
+}
+
+
+export type TableProps = {
+    data?: TableData;
+    editClick?: () => void;
+    transferClick?: () => void;
+    deleteClick?: () => {};
 }

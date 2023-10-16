@@ -1,61 +1,89 @@
 {
     "data": {
-        "table": [
-            {
-                "id": "001",
-                "user": "Darléne Menson",
-                "category": "Congés payés",
-                "period": "2020-2021",
-                "actual": 16,
-                "taken": 10,
-                "future": 34
-            },
-            {
-                "id": "002",
-                "user": "Marlon Brandon",
-                "category": "RTT",
-                "period": "2020",
-                "actual": 3,
-                "taken": 25,
-                "future": 20
-            },
-            {
-                "id": "003",
-                "user": "Darléne Menson Dujon",
-                "category": "Congés payés",
-                "period": "2020-2021",
-                "actual": 16,
-                "taken": 10,
-                "future": 34
-            },
-            {
-                "id": "004",
-                "user": "Marlon Brandon",
-                "category": "RTT",
-                "period": "2020",
-                "actual": 3,
-                "taken": 25,
-                "future": 20
-            },
-            {
-                "id": "005",
-                "user": "Darléne Menson Dujon",
-                "category": "Congés payés",
-                "period": "2020-2021",
-                "actual": 16,
-                "taken": 10,
-                "future": 34
-            },
-            {
-                "id": "006",
-                "user": "Marlon Brandon",
-                "category": "RTT",
-                "period": "2020",
-                "actual": 3,
-                "taken": 25,
-                "future": 20
-            }
-        ]
+        "table": {
+            "head": [
+                "Utilisateurs",
+                "Catégorie",
+                "Période",
+                "Solde actuel",
+                "Solde pris",
+                "Solde futur"
+            ],
+            "mock": [
+                {
+                    "id": "001",
+                    "user": "Darléne Menson",
+                    "category": {
+                        "title": "Congés payés",
+                        "color": "#FF8851"
+                    },
+                    "period": "2020-2021",
+                    "actual": 16,
+                    "taken": 10,
+                    "future": 34
+                },
+                {
+                    "id": "002",
+                    "user": "Marlon Brandon",
+                    "category": {
+                        "title": "RTT",
+                        "color": "#A851FF"
+                    },
+                    "period": "2020",
+                    "actual": 3,
+                    "taken": 25,
+                    "future": 20
+                },
+                {
+                    "id": "003",
+                    "user": "Darléne Menson Dujon",
+                    "category": {
+                        "title": "Congés payés",
+                        "color": "#FF8851"
+                    },
+                    "period": "2020-2021",
+                    "actual": 16,
+                    "taken": 10,
+                    "future": 34
+                },
+                {
+                    "id": "004",
+                    "user": "Marlon Brandon",
+                    "category": {
+                        "title": "RTT",
+                        "color": "#A851FF"
+                    },
+                    "period": "2020",
+                    "actual": 3,
+                    "taken": 25,
+                    "future": 20
+                },
+                {
+                    "id": "005",
+                    "user": "Darléne Menson Dujon",
+                    "category": {
+                        "title": "Congés payés",
+                        "color": "#FF8851"
+                    },
+                    "period": "2020-2021",
+                    "actual": 16,
+                    "taken": 10,
+                    "future": 34
+                },
+                {
+                    "id": "006",
+                    "user": "Marlon Brandon",
+                    "category": {
+                        "title": "RTT",
+                        "color": "#A851FF"
+                    },
+                    "period": "2020",
+                    "actual": 3,
+                    "taken": 25,
+                    "future": 20
+                }
+            ]
+        }
     },
     "ui": {
         "topBar": {
