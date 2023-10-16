@@ -56,8 +56,8 @@ export type AccordionProps = {
 
 
 export type TableProps = {
-    data?: TableData;
+    data: TableData[];
     editClick?: () => void;
     transferClick?: () => void;
-    deleteClick?: () => {};
+    deleteClick?: (e: unknown) => void;
 }

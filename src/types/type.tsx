@@ -25,10 +25,16 @@ export type SvgElement = {
 }
 
 export type TableData = {
-    users: string;
-    category: string;
-    period: number;
+    id: number;
+    user: string;
+    category: TableCategory;
+    period: string;
     actual: number;
     taken: number;
     future: number;
+}
+
+export type TableCategory = {
+    title: string;
+    color: string;
 }

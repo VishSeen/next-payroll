@@ -18,84 +18,98 @@ const TableView: FunctionComponent<TableProps> = ({
     deleteClick,
 }) => {
     return (
-        <StyledTable>
-            <thead>
-                <tr>
-                    {
-                        config?.data?.table?.head.map((item, i) => (
-                            <th key={i} style={roboto.style}>
-                                {item}
-                            </th>
-                        ))
-                    }
-                </tr>
-            </thead>
-            <tbody>
-                {
-                    config?.data?.table?.mock.map((item, i) => (
-                        <tr key={i} >
-                            <td style={roboto.style}>
-                                {item?.user}
-                            </td>
+        <>
+            {
+                data.length !== 0 ? (
+                    <StyledTable>
+                        <thead>
+                            <tr>
+                                {
+                                    config?.data?.table?.head.map((item, i) => (
+                                        <th key={i} style={roboto.style}>
+                                            {item}
+                                        </th>
+                                    ))
+                                }
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                data && data.map((item, i) => (
+                                    <tr id={item?.id} key={i} >
+                                        <td style={roboto.style}>
+                                            {item?.user}
+                                        </td>
 
-                            <td style={roboto.style}>
-                                <div>
-                                    <div className="circle" style={{ backgroundColor: item?.category?.color }}></div>
-                                    {item?.category?.title}
-                                </div>
-                            </td>
+                                        <td style={roboto.style}>
+                                            <div>
+                                                <div className="circle" style={{ backgroundColor: item?.category?.color }}></div>
+                                                {item?.category?.title}
+                                            </div>
+                                        </td>
 
-                            <td style={roboto.style}>
-                                {item?.period}
-                            </td>
+                                        <td style={roboto.style}>
+                                            {item?.period}
+                                        </td>
 
-                            <td style={roboto.style}>
-                                {item?.actual}
-                            </td>
+                                        <td style={roboto.style}>
+                                            {item?.actual}
+                                        </td>
 
-                            <td style={roboto.style}>
-                                {item?.taken}
-                            </td>
+                                        <td style={roboto.style}>
+                                            {item?.taken}
+                                        </td>
 
-                            <td style={roboto.style}>
-                                {item?.taken}
-                            </td>
+                                        <td style={roboto.style}>
+                                            {item?.taken}
+                                        </td>
 
-                            <td style={roboto.style}>
-                                <div className="button-container">
-                                    <button onClick={editClick}>
-                                        <Image
-                                            src={icEdit}
-                                            alt="Icon Edit"
-                                            width={32}
-                                            height={32}
-                                        />
-                                    </button>
+                                        <td style={roboto.style}>
+                                            <div className="button-container">
+                                                <button onClick={editClick}>
+                                                    <Image
+                                                        src={icEdit}
+                                                        alt="Icon Edit"
+                                                        width={32}
+                                                        height={32}
+                                                    />
+                                                </button>
 
-                                    <button onClick={transferClick}>
-                                        <Image
-                                            src={icTransfer}
-                                            alt="Icon Delete"
-                                            width={32}
-                                            height={32}
-                                        />
-                                    </button>
+                                                <button onClick={transferClick}>
+                                                    <Image
+                                                        src={icTransfer}
+                                                        alt="Icon Delete"
+                                                        width={32}
+                                                        height={32}
+                                                    />
+                                                </button>
 
-                                    <button onClick={deleteClick}>
-                                        <Image
-                                            src={icDelete}
-                                            alt="Icon Delete"
-                                            width={32}
-                                            height={32}
-                                        />
-                                    </button>
-                                </div>
-                            </td>
-                        </tr>
-                    ))
-                }
-            </tbody>
-        </StyledTable>
+                                                <button onClick={deleteClick}>
+                                                    <Image
+                                                        src={icDelete}
+                                                        alt="Icon Delete"
+                                                        width={32}
+                                                        height={32}
+                                                    />
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                ))
+                            }
+                        </tbody>
+                    </StyledTable>
+                ) : (
+                    <div className="txt-error">
+                        <h3>Tableau est vide..</h3>
+
+                        <p>
+                            Commencez par ajouter des éléments
+                        </p>
+                    </div>
+                )
+            }
+        </>
     )
 }
 
