@@ -38,7 +38,8 @@ export type ButtonProps = {
 
 
 export type FormProps = {
-    isOpened: boolean;
+    open?: boolean;
+    closeClick: () => void;
     handleValidation: () => void;
 }
 
