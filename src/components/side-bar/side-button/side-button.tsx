@@ -5,7 +5,8 @@ import StyledSideButton from "./style";
 import Link from "next/link";
 import { poppins } from "@/styles/fonts";
 
-const Button: FunctionComponent<SideButtonProps> = ({
+const SideButton: FunctionComponent<SideButtonProps> = ({
+    className,
     text,
     icon,
     isBlue,
@@ -13,7 +14,7 @@ const Button: FunctionComponent<SideButtonProps> = ({
     click
 }) => {
     return (
-        <StyledSideButton className={`button__wrapper ${isBlue ? 'blue' : ''}`}>
+        <StyledSideButton className={`button__wrapper ${isBlue ? 'blue' : ''} ${className}`}>
             {
                 href ? (
                     <Link href={href}>
@@ -58,4 +59,4 @@ const Button: FunctionComponent<SideButtonProps> = ({
     );
 }
 
-export default Button;
+export default SideButton;

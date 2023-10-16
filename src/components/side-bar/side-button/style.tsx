@@ -13,12 +13,19 @@ const StyledSideButton = styled.div`
             border-bottom: 2px solid #0084E1;
         }
 
+        &.ic-burger {
+            a, button {
+                justify-content: center;
+            }
+        }
+
         a, button {
             height: 100%;
             width: 100%;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
+            padding: 0 15px;
 
             img {
                 margin-right: 25px;

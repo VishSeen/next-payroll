@@ -19,7 +19,8 @@ const StyledSideMenuItem = styled.div`
             background: #FFF;
             width: 170px;
             height: 170px;
-            /* transition: all 0.2s ease; */
+            padding: 15px 12px;
+
             &:hover {
                 border: 2px solid #0090F5;
                 p {
@@ -27,18 +28,14 @@ const StyledSideMenuItem = styled.div`
                 }
             }
 
-            button {
-                width: 100%;
-                height: 100%;
-                p {
-                    color: #494949;
-                    text-align: center;
-                    font-size: 20px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                    transition: all 0.2s ease;
-                }
+            p {
+                color: #494949;
+                text-align: center;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                transition: all 0.2s ease;
             }
         }
     }

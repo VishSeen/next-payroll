@@ -21,6 +21,7 @@ export type SideMenuItemProps = {
 }
 
 export type SideButtonProps = {
+    className?: string;
     text?: string;
     icon?: string;
     isBlue: boolean;

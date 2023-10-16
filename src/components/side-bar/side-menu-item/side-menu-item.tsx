@@ -16,20 +16,20 @@ const SideMenuItem: FunctionComponent<SideMenuItemProps> = ({
                     {
                         items.map((item, i) => {
                             return (
-                                <Link href={item?.href} key={i}>
-                                    <button>
+                                <li key={i}>
+                                    <Link href={item?.href} >
                                         <Image
                                             src={`/svg/side-bar-overlay/${item?.image?.src}`}
                                             alt={item?.image?.alt as string}
-                                            width={74}
-                                            height={99}
+                                            width={75}
+                                            height={100}
                                         />
 
                                         <p style={poppins.style}>
                                             {item?.title}
                                         </p>
-                                    </button>
-                                </Link>
+                                    </Link>
+                                </li>
                             )
                         })
                     }
