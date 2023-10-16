@@ -1,5 +1,62 @@
 {
-
+    "data": {
+        "table": [
+            {
+                "id": "001",
+                "user": "Darléne Menson",
+                "category": "Congés payés",
+                "period": "2020-2021",
+                "actual": 16,
+                "taken": 10,
+                "future": 34
+            },
+            {
+                "id": "002",
+                "user": "Marlon Brandon",
+                "category": "RTT",
+                "period": "2020",
+                "actual": 3,
+                "taken": 25,
+                "future": 20
+            },
+            {
+                "id": "003",
+                "user": "Darléne Menson Dujon",
+                "category": "Congés payés",
+                "period": "2020-2021",
+                "actual": 16,
+                "taken": 10,
+                "future": 34
+            },
+            {
+                "id": "004",
+                "user": "Marlon Brandon",
+                "category": "RTT",
+                "period": "2020",
+                "actual": 3,
+                "taken": 25,
+                "future": 20
+            },
+            {
+                "id": "005",
+                "user": "Darléne Menson Dujon",
+                "category": "Congés payés",
+                "period": "2020-2021",
+                "actual": 16,
+                "taken": 10,
+                "future": 34
+            },
+            {
+                "id": "006",
+                "user": "Marlon Brandon",
+                "category": "RTT",
+                "period": "2020",
+                "actual": 3,
+                "taken": 25,
+                "future": 20
+            }
+        ]
+    },
     "ui": {
         "topBar": {
             "settingButtons": [
