@@ -1,5 +1,4 @@
-import { MouseEventHandler } from "react";
-import { Img, Inputs, NavItem, NavSubItem, TableData, typeMenuItem } from "./type";
+import { Crumb, Img, Inputs, NavItem, NavSubItem, TableData, typeMenuItem } from "./type";
 
 export type UserPanelProps = {
     name: string;
@@ -49,12 +48,12 @@ export type ButtonProps = {
 export type ModalFormProps = {
     open: boolean;
     viewModalClick?: () => void;
-    handleFormValidation?: (e: MouseEvent) => {};
+    handleFormValidation?: (e: any) => {};
 }
 
 export type FormInputProps = {
     inputs: Inputs;
-    handleChange?: (e) => void;
+    handleChange?: (e: any) => void;
 }
 
 
@@ -70,5 +69,5 @@ export type TableProps = {
     data: TableData[];
     editClick?: () => void;
     transferClick?: () => void;
-    deleteClick?: (e) => void;
+    deleteClick?: (e: any) => void;
 }

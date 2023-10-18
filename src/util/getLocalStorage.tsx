@@ -5,11 +5,13 @@ import data from '../../config.json';
 
 export const getLocalStorage = (key: string): TableData[] => {
     const value = localStorage.getItem(key);
-    const objValue = JSON.parse(value);
 
-    if(objValue === null) return []
-
-    return objValue;
+    if(value !== null) {
+        const objValue = JSON.parse(value);
+        return objValue;
+    } else {
+        return([]);
+    }
 }
 
 

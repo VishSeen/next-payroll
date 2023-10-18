@@ -87,9 +87,11 @@ const ModalForm: FunctionComponent<ModalFormProps> = ({
         }
     ]
 
+    const value: TableData[] = getLocalStorage("Table");
+
 
     useEffect(() => {
-        setUsers(config?.data?.users)
+        setUsers(config?.data?.users);
 
         if (users !== undefined) {
             const selectItem = removeDuplicate(value);
@@ -112,33 +114,33 @@ const ModalForm: FunctionComponent<ModalFormProps> = ({
     }
 
     // handle on input change event
-    const handleChange = (e: Event) => {
+    const handleChange = (e: any) => {
         setFormValues({ ...formValues, [e?.target?.name]: e?.target?.value })
     }
 
 
-    const handleFormValidation = (e: MouseEvent) => {
+    const handleFormValidation = (e: any) => {
         const uniqueId = uuid();
         setFormValues({ ...formValues, id: uniqueId });
 
         e.preventDefault();
 
         if (isValid()) {
-            const value = getLocalStorage("Table");
-
             if (value !== undefined || value !== null) {
                 const tempLocalData: TableData[] = value;
                 tempLocalData?.push(formValues);
                 setLocalStorage("Table", tempLocalData);
+
+                console.log("TYPEOF", value);
             } else {
-                value.push(formValues)
-                setLocalStorage("Table", value)
+                value.push(formValues);
+                setLocalStorage("Table", value);
             }
+            router.push(`?dataId=${uniqueId}`, { scroll: true });
 
-            router.push(`?dataId=${uniqueId}`, { scroll: true })
-
-
-            viewModalClick();
+            if (viewModalClick) {
+                viewModalClick();
+            }
         } else {
             setshowErrorMessage(true);
         }
