@@ -25,7 +25,7 @@ const ModalForm: FunctionComponent<ModalFormProps> = ({
     const [users, setUsers] = useState<string[]>();
     const [showErrorMessage, setshowErrorMessage] = useState<boolean>(false);
     const [formValues, setFormValues] = useState<TableData>({
-        id: '',
+        id: "",
         user: "",
         category: "",
         period: "",
@@ -120,18 +120,16 @@ const ModalForm: FunctionComponent<ModalFormProps> = ({
 
 
     const handleFormValidation = (e: any) => {
+        e.preventDefault();
+
         const uniqueId = uuid();
         setFormValues({ ...formValues, id: uniqueId });
-
-        e.preventDefault();
 
         if (isValid()) {
             if (value !== undefined || value !== null) {
                 const tempLocalData: TableData[] = value;
                 tempLocalData?.push(formValues);
                 setLocalStorage("Table", tempLocalData);
-
-                console.log("TYPEOF", value);
             } else {
                 value.push(formValues);
                 setLocalStorage("Table", value);
@@ -186,7 +184,6 @@ const ModalForm: FunctionComponent<ModalFormProps> = ({
                                 className="btn-add"
                                 onClick={handleFormValidation}
                                 style={poppins.style}
-                                type="submit"
                             >
                                 Ajouter
                             </button>
