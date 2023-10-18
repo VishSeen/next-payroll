@@ -3,12 +3,16 @@
 import { ChangeEvent, FunctionComponent, MouseEvent, MouseEventHandler, useEffect, useRef, useState } from "react";
 import StyledModalForm from "./style";
 import { ModalFormProps } from "@/types/props";
+import { v4 as uuid } from 'uuid';
 
-import useLocalStorage from "@/hooks/useLocalStorage";
 import removeDuplicate from "@/util/RemoveDuplicate";
 import { poppins } from "@/styles/fonts";
 import FormInput from "./form-input/form-input";
 import { Inputs, TableData } from "@/types/type";
+import { useRouter } from "next/navigation";
+import { getLocalStorage, setLocalStorage } from "@/util/getLocalStorage";
+import config from '../../../config.json';
+
 
 const txtError = "** Aucun champs peut etre vide.. **"
 
@@ -17,11 +21,11 @@ const ModalForm: FunctionComponent<ModalFormProps> = ({
     open,
     viewModalClick
 }) => {
-    const [user, setUser] = useState<string[]>();
-    const [value, setValue] = useLocalStorage("Table");
+    const router = useRouter()
+    const [users, setUsers] = useState<string[]>();
     const [showErrorMessage, setshowErrorMessage] = useState<boolean>(false);
     const [formValues, setFormValues] = useState<TableData>({
-        id: 0,
+        id: '',
         user: "",
         category: "",
         period: "",
@@ -39,7 +43,7 @@ const ModalForm: FunctionComponent<ModalFormProps> = ({
             name: "user",
             placeholder: "Selectez l'utilisateur",
             required: true,
-            option: user
+            option: users
         },
         {
             id: 2,
@@ -85,9 +89,11 @@ const ModalForm: FunctionComponent<ModalFormProps> = ({
 
 
     useEffect(() => {
-        if(value !== undefined) {
+        setUsers(config?.data?.users)
+
+        if (users !== undefined) {
             const selectItem = removeDuplicate(value);
-            setUser(selectItem);
+            setUsers(selectItem);
         }
     }, []);
 
@@ -112,25 +118,31 @@ const ModalForm: FunctionComponent<ModalFormProps> = ({
 
 
     const handleFormValidation = (e: MouseEvent) => {
+        const uniqueId = uuid();
+        setFormValues({ ...formValues, id: uniqueId });
+
         e.preventDefault();
 
-
         if (isValid()) {
-            const tempLocalData:TableData[] = value;
-            tempLocalData?.push(formValues);
+            const value = getLocalStorage("Table");
 
-            setValue(tempLocalData);
+            if (value !== undefined || value !== null) {
+                const tempLocalData: TableData[] = value;
+                tempLocalData?.push(formValues);
+                setLocalStorage("Table", tempLocalData);
+            } else {
+                value.push(formValues)
+                setLocalStorage("Table", value)
+            }
 
-            console.log(tempLocalData)
+            viewModalClick();
 
-            viewModalClick()
+            router.push(`?${uniqueId}`, { scroll: true })
+
         } else {
-            console.log("empty");
             setshowErrorMessage(true);
         }
     }
-
-
 
 
 
@@ -172,6 +184,7 @@ const ModalForm: FunctionComponent<ModalFormProps> = ({
                                 className="btn-add"
                                 onClick={handleFormValidation}
                                 style={poppins.style}
+                                type="submit"
                             >
                                 Ajouter
                             </button>

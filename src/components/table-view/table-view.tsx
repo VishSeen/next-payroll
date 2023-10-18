@@ -20,7 +20,7 @@ const TableView: FunctionComponent<TableProps> = ({
     return (
         <>
             {
-                data.length !== 0 ? (
+                data && (
                     <StyledTable>
                         <thead>
                             <tr>
@@ -35,7 +35,7 @@ const TableView: FunctionComponent<TableProps> = ({
                         </thead>
                         <tbody>
                             {
-                                data && data.map((item, i) => (
+                                data.length !== 0 && data.map((item, i) => (
                                     <tr id={item?.id} key={i} >
                                         <td style={roboto.style}>
                                             {item?.user}
@@ -43,7 +43,7 @@ const TableView: FunctionComponent<TableProps> = ({
 
                                         <td style={roboto.style}>
                                             <div>
-                                                <div className="circle" style={{ backgroundColor: item?.category === 'RTT' ? '#A851FF' : '#FF8851'}}></div>
+                                                <div className="circle" style={{ backgroundColor: item?.category === 'RTT' ? '#A851FF' : '#FF8851' }}></div>
                                                 {item?.category}
                                             </div>
                                         </td>
@@ -99,14 +99,6 @@ const TableView: FunctionComponent<TableProps> = ({
                             }
                         </tbody>
                     </StyledTable>
-                ) : (
-                    <div className="txt-error">
-                        <h3>Tableau est vide..</h3>
-
-                        <p>
-                            Commencez par ajouter des éléments
-                        </p>
-                    </div>
                 )
             }
         </>

@@ -25,7 +25,7 @@ export type SvgElement = {
 }
 
 export type TableData = {
-    id: number;
+    id: string;
     user: string;
     category: string;
     period: string;

@@ -1,5 +1,10 @@
 {
     "data": {
+        "users": [
+            "Darléne Menson",
+            "Marlon Brandon",
+            "Darléne Menson Dujon"
+        ],
         "table": {
             "head": [
                 "Utilisateurs",
@@ -11,7 +16,7 @@
             ],
             "mock": [
                 {
-                    "id": 1,
+                    "id": "1",
                     "user": "Darléne Menson",
                     "category": "Congés payés",
                     "period": "2020-2021",
@@ -20,7 +25,7 @@
                     "future": 34
                 },
                 {
-                    "id": 2,
+                    "id": "2",
                     "user": "Marlon Brandon",
                     "category": "RTT",
                     "period": "2020",
@@ -29,7 +34,7 @@
                     "future": 20
                 },
                 {
-                    "id": 3,
+                    "id": "3",
                     "user": "Darléne Menson Dujon",
                     "category": "Congés payés",
                     "period": "2020-2021",
@@ -38,7 +43,7 @@
                     "future": 34
                 },
                 {
-                    "id": 4,
+                    "id": "4",
                     "user": "Marlon Brandon",
                     "category": "RTT",
                     "period": "2020",
@@ -47,7 +52,7 @@
                     "future": 20
                 },
                 {
-                    "id": 5,
+                    "id": "5",
                     "user": "Darléne Menson Dujon",
                     "category": "Congés payés",
                     "period": "2020-2021",
@@ -56,7 +61,7 @@
                     "future": 34
                 },
                 {
-                    "id": 6,
+                    "id": "6",
                     "user": "Marlon Brandon",
                     "category": "RTT",
                     "period": "2020",

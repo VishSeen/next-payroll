@@ -28,15 +28,15 @@ const FormInput: FunctionComponent<FormInputProps> = ({
                         }
                     </select>
                 ) : (
-                        <input
-                            style={poppins.style}
-                            className="form-input__input"
-                            type={inputs?.type}
-                            name={inputs?.name}
-                            placeholder={inputs?.placeholder}
-                            required={inputs?.required}
-                            onChange={handleChange}
-                        />
+                    <input
+                        style={poppins.style}
+                        className="form-input__input"
+                        type={inputs?.type}
+                        name={inputs?.name}
+                        placeholder={inputs?.placeholder}
+                        required={inputs?.required}
+                        onChange={handleChange}
+                    />
                 )
             }
         </StyledFormInput>

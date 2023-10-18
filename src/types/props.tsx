@@ -70,5 +70,5 @@ export type TableProps = {
     data: TableData[];
     editClick?: () => void;
     transferClick?: () => void;
-    deleteClick?: (e: Event) => void;
+    deleteClick?: (e) => void;
 }
