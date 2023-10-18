@@ -7,6 +7,7 @@ import config from "../../../config.json";
 import userImage from "../../../public/image/user.png"
 import StyledWrapper from "./style";
 import Button from "./button/button";
+import Breadcrumbs from "./breadcrumbs/breadcrumbs";
 
 
 
@@ -18,7 +19,11 @@ const TopBar: FunctionComponent<TopBarProps> = ({
 
     return (
         <StyledWrapper className="top-bar__wrapper">
-            <div className="left-bar"></div>
+            <div className="left-bar">
+                <Breadcrumbs
+                    parent={"Home"}
+                />
+            </div>
 
             <div className="right-bar">
                 <div className="setting-buttons">

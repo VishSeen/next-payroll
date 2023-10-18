@@ -50,3 +50,9 @@ export type Inputs = {
     errorMessage?: string;
     option?: string[]
 }
+
+export type Crumb = {
+    icon?: string;
+    path: string;
+    href: string;
+}

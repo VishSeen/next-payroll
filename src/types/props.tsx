@@ -1,5 +1,5 @@
 import { MouseEventHandler } from "react";
-import { Img, Inputs, NavItem, NavSubItem, TableData, typeMenuItem } from "./type";
+import { Crumb, Img, Inputs, NavItem, NavSubItem, TableData, typeMenuItem } from "./type";
 
 export type UserPanelProps = {
     name: string;
@@ -11,6 +11,11 @@ export type UserPanelProps = {
 
 export type TopBarProps = {
     breadcrumb?: string[];
+}
+
+export type BreadcrumbProps = {
+    parent?: string;
+    listOfCrumbs?: Crumb[];
 }
 
 export type SideBarProps  = {
