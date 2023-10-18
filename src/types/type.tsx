@@ -18,6 +18,7 @@ export type NavItem = {
 export type NavSubItem = {
     title: string;
     path?: string;
+    icon?: string;
 }
 
 export type SvgElement = {
@@ -55,4 +56,10 @@ export type Crumb = {
     icon?: string;
     path: string;
     href: string;
+}
+
+
+export type TypePath = {
+    parent: typeMenuItem | null;
+    child: NavItem | null;
 }
