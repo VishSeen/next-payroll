@@ -8,10 +8,6 @@ export type UserPanelProps = {
 }
 
 
-export type TopBarProps = {
-    breadcrumb?: string[];
-}
-
 export type SideBarProps  = {
     openFormClick: () => void;
 }

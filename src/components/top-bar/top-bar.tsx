@@ -1,7 +1,6 @@
 'use client'
 
-import { TopBarProps } from "@/types/props"
-import { FunctionComponent, useState } from "react"
+import { FunctionComponent } from "react"
 import UserPanel from "./user-panel/user-panel";
 import config from "../../../config.json";
 import userImage from "../../../public/image/user.png"
@@ -13,9 +12,7 @@ import Breadcrumbs from "./breadcrumbs/breadcrumbs";
 
 
 
-const TopBar: FunctionComponent<TopBarProps> = ({
-    breadcrumb
-}) => {
+const TopBar: FunctionComponent = () => {
 
     return (
         <StyledWrapper className="top-bar__wrapper">

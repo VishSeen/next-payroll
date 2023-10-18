@@ -1,4 +1,4 @@
-import { BreadcrumbProps } from "@/types/props"
+
 import { FunctionComponent, useEffect, useState } from "react"
 import StyledBreadcrumb from "./style"
 import { usePathname } from "next/navigation"
@@ -7,9 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 
-const Breadcrumb: FunctionComponent<BreadcrumbProps> = ({
-    parent
-}) => {
+const Breadcrumb: FunctionComponent = () => {
     const pathName = usePathname();
     const [path, setPath] = useState<string[]>([]);
 
