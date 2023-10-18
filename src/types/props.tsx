@@ -12,6 +12,11 @@ export type TopBarProps = {
     breadcrumb?: string[];
 }
 
+export type BreadcrumbProps = {
+    parent?: string;
+    listOfCrumbs?: Crumb[];
+}
+
 export type SideBarProps  = {
     openFormClick: () => void;
 }
