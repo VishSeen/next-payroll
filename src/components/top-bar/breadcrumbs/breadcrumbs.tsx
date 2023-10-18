@@ -82,8 +82,8 @@ const Breadcrumb: FunctionComponent<BreadcrumbProps> = ({
                             </span>
 
                             <li className="link-sub">
-                                <Link href={`/${path[2]}`}>
-                                    {path[3]}
+                                <Link href={`/${path[1]}/${path[2]}/${path[3]}`}>
+                                    {path[3].replaceAll("-", " ")}
                                 </Link>
                             </li>
                         </>
