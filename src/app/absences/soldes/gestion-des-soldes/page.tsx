@@ -3,13 +3,14 @@
 import TableView from '@/components/table-view/table-view';
 import { useEffect, useLayoutEffect, useState } from 'react';
 import { TableData } from '@/types/type';
-import { usePathname } from 'next/navigation';
+import { usePathname, useSearchParams } from 'next/navigation';
 import { getLocalStorage, setLocalStorage } from '@/util/getLocalStorage';
 
 export default function Gestion() {
     const [data, setData] = useState<TableData[]>([]);
     const pathName = usePathname();
-    const { dataId } = pathName;
+    const searchParams = useSearchParams()
+    const dataId = searchParams.get('dataId');
 
     const deleteItemClick = (e) => {
         const id = e.target.closest('tr').getAttribute('id');
@@ -30,8 +31,7 @@ export default function Gestion() {
             setData(value);
         }
 
-        console.log("Path change")
-    }, [pathName])
+    }, [dataId, pathName])
 
     return (
         <main className="flex min-h-screen flex-col items-center justify-between p-24">
