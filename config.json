@@ -13,10 +13,7 @@
                 {
                     "id": 1,
                     "user": "Darléne Menson",
-                    "category": {
-                        "title": "Congés payés",
-                        "color": "#FF8851"
-                    },
+                    "category": "Congés payés",
                     "period": "2020-2021",
                     "actual": 16,
                     "taken": 10,
@@ -25,10 +22,7 @@
                 {
                     "id": 2,
                     "user": "Marlon Brandon",
-                    "category": {
-                        "title": "RTT",
-                        "color": "#A851FF"
-                    },
+                    "category": "RTT",
                     "period": "2020",
                     "actual": 3,
                     "taken": 25,
@@ -37,10 +31,7 @@
                 {
                     "id": 3,
                     "user": "Darléne Menson Dujon",
-                    "category": {
-                        "title": "Congés payés",
-                        "color": "#FF8851"
-                    },
+                    "category": "Congés payés",
                     "period": "2020-2021",
                     "actual": 16,
                     "taken": 10,
@@ -49,10 +40,7 @@
                 {
                     "id": 4,
                     "user": "Marlon Brandon",
-                    "category": {
-                        "title": "RTT",
-                        "color": "#A851FF"
-                    },
+                    "category": "RTT",
                     "period": "2020",
                     "actual": 3,
                     "taken": 25,
@@ -61,10 +49,7 @@
                 {
                     "id": 5,
                     "user": "Darléne Menson Dujon",
-                    "category": {
-                        "title": "Congés payés",
-                        "color": "#FF8851"
-                    },
+                    "category": "Congés payés",
                     "period": "2020-2021",
                     "actual": 16,
                     "taken": 10,
@@ -73,10 +58,7 @@
                 {
                     "id": 6,
                     "user": "Marlon Brandon",
-                    "category": {
-                        "title": "RTT",
-                        "color": "#A851FF"
-                    },
+                    "category": "RTT",
                     "period": "2020",
                     "actual": 3,
                     "taken": 25,
@@ -107,7 +89,7 @@
             "menuItems": [
                 {
                     "title": "Planning",
-                    "href": "planning",
+                    "href": "/planning",
                     "image": {
                         "src": "ic-planning.svg",
                         "alt": "Icon Planning"
@@ -115,7 +97,7 @@
                 },
                 {
                     "title": "Absences",
-                    "href": "absences",
+                    "href": "/absences",
                     "image": {
                         "src": "ic-absence.svg",
                         "alt": "Icon absence"
@@ -123,7 +105,7 @@
                 },
                 {
                     "title": "Heures",
-                    "href": "heures",
+                    "href": "/heures",
                     "image": {
                         "src": "ic-heures.svg",
                         "alt": "Icon Heures"
@@ -131,7 +113,7 @@
                 },
                 {
                     "title": "Note de frais",
-                    "href": "note-de-frais",
+                    "href": "/note-de-frais",
                     "image": {
                         "src": "ic-note-frais.svg",
                         "alt": "Icon Note de frais"
@@ -139,7 +121,7 @@
                 },
                 {
                     "title": "Présence",
-                    "href": "presence",
+                    "href": "/presence",
                     "image": {
                         "src": "ic-presence.svg",
                         "alt": "Icon Présence"
@@ -147,7 +129,7 @@
                 },
                 {
                     "title": "Compétences",
-                    "href": "competences",
+                    "href": "/competences",
                     "image": {
                         "src": "ic-competences.svg",
                         "alt": "Icon Compétences"
@@ -155,7 +137,7 @@
                 },
                 {
                     "title": "Salaire et paie",
-                    "href": "salaire-et-paie",
+                    "href": "/salaire-et-paie",
                     "image": {
                         "src": "ic-salary.svg",
                         "alt": "Icon Salaire et paie"
@@ -163,7 +145,7 @@
                 },
                 {
                     "title": "Entretiens",
-                    "href": "entretiens",
+                    "href": "/entretiens",
                     "image": {
                         "src": "ic-entretien.svg",
                         "alt": "Icon Entretiens"
@@ -171,7 +153,7 @@
                 },
                 {
                     "title": "Matériels",
-                    "href": "material",
+                    "href": "/material",
                     "image": {
                         "src": "ic-material.svg",
                         "alt": "Icon Matériels"
@@ -179,7 +161,7 @@
                 },
                 {
                     "title": "Documents",
-                    "href": "document",
+                    "href": "/document",
                     "image": {
                         "src": "ic-document.svg",
                         "alt": "Icon Documents"
@@ -187,7 +169,7 @@
                 },
                 {
                     "title": "RH",
-                    "href": "rh",
+                    "href": "/rh",
                     "image": {
                         "src": "ic-rh.svg",
                         "alt": "Icon RH"

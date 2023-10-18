@@ -11,9 +11,8 @@ const useLocalStorage = (key: string) => {
         setValue(mockData)
     }
 
-    useEffect(() => {
-        localStorage.setItem(key, JSON.stringify(value));
-    }, [value])
+    localStorage.setItem(key, JSON.stringify(value));
+    window.dispatchEvent(new Event('storage'))
 
     return [value, setValue] as const;
 }

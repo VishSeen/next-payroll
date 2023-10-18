@@ -27,7 +27,7 @@ export type SvgElement = {
 export type TableData = {
     id: number;
     user: string;
-    category: TableCategory;
+    category: string;
     period: string;
     actual: number;
     taken: number;
@@ -37,4 +37,16 @@ export type TableData = {
 export type TableCategory = {
     title: string;
     color: string;
+}
+
+
+export type Inputs = {
+    id: number;
+    label: string;
+    type: string;
+    name: string;
+    placeholder: string;
+    required?: boolean;
+    errorMessage?: string;
+    option?: string[]
 }

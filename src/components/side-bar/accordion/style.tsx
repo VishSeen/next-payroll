@@ -68,6 +68,12 @@ const StyledAccordion = styled.div`
 
         a {
             padding-bottom: 18px;
+            &.active {
+                span {
+                    color: #0090F5;
+                    font-weight: 500;
+                }
+            }
         }
 
         span {

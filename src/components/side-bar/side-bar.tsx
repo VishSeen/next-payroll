@@ -13,9 +13,12 @@ import ic_graphic from '../../../public/svg/side-bar/graphic.svg';
 import { poppins } from "@/styles/fonts";
 
 import config from '../../../config.json';
+import { SideBarProps } from "@/types/props";
 
 
-const SideBar:FunctionComponent = () => {
+const SideBar:FunctionComponent<SideBarProps> = ({
+    openFormClick
+}) => {
     const [opened, setOpened] = useState<boolean>(false);
 
     return(
@@ -24,7 +27,7 @@ const SideBar:FunctionComponent = () => {
 
             <SideButton isBlue={true} href="/" text="Accueil" icon={ic_accueil}/>
 
-            <SideButton isBlue={true} text="Ajouter" icon={ic_add}/>
+            <SideButton isBlue={true} text="Ajouter" icon={ic_add} click={openFormClick}/>
 
 
             <SideMenuOverlay isOpened={opened} />
@@ -36,6 +39,7 @@ const SideBar:FunctionComponent = () => {
                     className="img-background"
                     src={ic_graphic}
                     alt="Side bar graphic background"
+                    priority={true}
                 />
             </div>
         </StyledSideBar>

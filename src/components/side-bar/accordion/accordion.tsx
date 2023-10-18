@@ -2,11 +2,11 @@
 
 import { AccordionProps } from "@/types/props";
 import { FunctionComponent, useState } from "react";
-import Image from 'next/image';
+import { usePathname } from 'next/navigation'
 import StyledAccordion from "./style";
 import { poppins, roboto } from "@/styles/fonts";
 import Link from "next/link";
-import {ArrowDownSvg, EspaceSvg} from "@/components/svg/icons";
+import { EspaceSvg } from "@/components/svg/icons";
 
 
 const Accordion: FunctionComponent<AccordionProps> = ({
@@ -15,6 +15,7 @@ const Accordion: FunctionComponent<AccordionProps> = ({
     hasArrow,
     subItems
 }) => {
+    const pathname = usePathname()
     const [isOpened, setIsOpened] = useState(false);
 
     const toggleAccordion = () => {
@@ -55,7 +56,7 @@ const Accordion: FunctionComponent<AccordionProps> = ({
                     <div className="accordion__accordion-collapse">
                         {
                             subItems.map((item, key) => (
-                                <Link href={item?.path as string} key={key}>
+                                <Link className={`link ${pathname === item?.path ? 'active' : ''}`} href={item?.path as string} key={key}>
                                     <span style={roboto.style}>
                                         {item?.title}
                                     </span>

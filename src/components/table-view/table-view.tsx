@@ -1,7 +1,7 @@
 'use client'
 
 import { TableProps } from "@/types/props";
-import { FunctionComponent } from "react";
+import { FunctionComponent, useEffect } from "react";
 import StyledTable from "./style";
 import config from "../../../config.json";
 import { roboto } from "@/styles/fonts";
@@ -43,8 +43,8 @@ const TableView: FunctionComponent<TableProps> = ({
 
                                         <td style={roboto.style}>
                                             <div>
-                                                <div className="circle" style={{ backgroundColor: item?.category?.color }}></div>
-                                                {item?.category?.title}
+                                                <div className="circle" style={{ backgroundColor: item?.category === 'RTT' ? '#A851FF' : '#FF8851'}}></div>
+                                                {item?.category}
                                             </div>
                                         </td>
 
