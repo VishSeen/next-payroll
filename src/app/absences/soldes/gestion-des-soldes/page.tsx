@@ -9,7 +9,7 @@ import { getLocalStorage, setLocalStorage } from '@/util/getLocalStorage';
 export default function Gestion() {
     const [data, setData] = useState<TableData[]>([]);
     const pathName = usePathname();
-    const value: TableData[] = getLocalStorage("Table");
+    const { dataId } = pathName;
 
     const deleteItemClick = (e) => {
         const id = e.target.closest('tr').getAttribute('id');
@@ -24,10 +24,13 @@ export default function Gestion() {
 
 
     useEffect(() => {
+        const value: TableData[] = getLocalStorage("Table");
+
         if(value.length !== 0) {
             setData(value);
         }
 
+        console.log("Path change")
     }, [pathName])
 
     return (

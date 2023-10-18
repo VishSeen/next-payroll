@@ -135,10 +135,10 @@ const ModalForm: FunctionComponent<ModalFormProps> = ({
                 setLocalStorage("Table", value)
             }
 
+            router.push(`?dataId=${uniqueId}`, { scroll: true })
+
+
             viewModalClick();
-
-            router.push(`?${uniqueId}`, { scroll: true })
-
         } else {
             setshowErrorMessage(true);
         }
