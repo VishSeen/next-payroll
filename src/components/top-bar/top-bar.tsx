@@ -20,9 +20,7 @@ const TopBar: FunctionComponent<TopBarProps> = ({
     return (
         <StyledWrapper className="top-bar__wrapper">
             <div className="left-bar">
-                <Breadcrumbs
-                    parent={"Home"}
-                />
+                <Breadcrumbs />
             </div>
 
             <div className="right-bar">
