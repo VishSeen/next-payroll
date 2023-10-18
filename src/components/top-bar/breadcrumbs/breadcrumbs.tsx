@@ -4,7 +4,6 @@ import StyledBreadcrumb from "./style"
 import { usePathname } from "next/navigation"
 import config from '../../../../config.json';
 import Link from "next/link";
-import { NavItem, TypePath, typeMenuItem } from "@/types/type";
 import Image from "next/image";
 
 
@@ -28,24 +27,50 @@ const Breadcrumb: FunctionComponent<BreadcrumbProps> = ({
         <StyledBreadcrumb className="breadcrumbs">
             <ul>
                 <li className="link-parent">
-                    <Link href={`/${path[1]}`}>
-                        {path[1]}
-                    </Link>
+                    {
+                        config?.ui?.sideBar?.menuItems.map((item, i) => (
+                            (item?.href.replace("/", "") === path[1]) ? (
+                                <>
+                                    <Image
+                                        src={`/svg/side-bar-overlay/${item?.image?.src}`}
+                                        alt={item?.image?.alt}
+                                        width={60}
+                                        height={61}
+                                    />
+
+                                    <Link href={`/${path[1]}`} key={i}>
+                                        {item?.title}
+                                    </Link></>
+                            ) : (
+                                <></>
+                            )
+                        ))
+                    }
                 </li>
 
                 {
                     path[2] && (
-                        <>
-                            <span className="icon material-symbols-outlined">
-                                chevron_right
-                            </span>
+                        config?.ui?.sideBar?.navItems.map((item, i) => (
+                            (item?.title.toLowerCase() === path[2]) ? (
+                                <>
+                                    <span className="icon material-symbols-outlined">
+                                        chevron_right
+                                    </span>
 
-                            <li className="link-child">
-                                <Link href={`/${path[2]}`}>
-                                    {path[2]}
-                                </Link>
-                            </li>
-                        </>
+                                    <li className="link-child">
+                                        <span className="icon material-symbols-outlined">
+                                            {item?.icon}
+                                        </span>
+
+                                        <Link href={`/${path[1]}/${path[2]}`}>
+                                            {item?.title}
+                                        </Link>
+                                    </li>
+                                </>
+                            ) : (
+                                <></>
+                            )
+                        ))
                     )
                 }
 

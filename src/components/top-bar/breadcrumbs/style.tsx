@@ -5,7 +5,17 @@ const StyledBreadcrumb = styled.div`
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 30px;
+        gap: 17px;
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 29px;
+
+            .icon {
+                color: #858585;
+            }
+        }
 
         .link-parent {
             a {
