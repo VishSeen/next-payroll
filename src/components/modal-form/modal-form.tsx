@@ -1,6 +1,6 @@
 'use client'
 
-import { ChangeEvent, FunctionComponent, MouseEvent, MouseEventHandler, useEffect, useRef, useState } from "react";
+import { ChangeEvent, FunctionComponent, MouseEvent, useEffect, useState } from "react";
 import StyledModalForm from "./style";
 import { ModalFormProps } from "@/types/props";
 import { v4 as uuid } from 'uuid';

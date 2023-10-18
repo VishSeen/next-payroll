@@ -10,7 +10,7 @@ export type UserPanelProps = {
 
 
 export type TopBarProps = {
-    name?: string;
+    breadcrumb?: string[];
 }
 
 export type SideBarProps  = {

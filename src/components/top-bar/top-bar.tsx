@@ -13,7 +13,7 @@ import Button from "./button/button";
 
 
 const TopBar: FunctionComponent<TopBarProps> = ({
-    name
+    breadcrumb
 }) => {
 
     return (

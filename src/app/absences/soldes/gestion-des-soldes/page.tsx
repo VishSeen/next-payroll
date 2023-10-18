@@ -1,7 +1,7 @@
 'use client'
 
 import TableView from '@/components/table-view/table-view';
-import { useEffect, useLayoutEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { TableData } from '@/types/type';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { getLocalStorage, setLocalStorage } from '@/util/getLocalStorage';
