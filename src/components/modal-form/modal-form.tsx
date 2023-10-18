@@ -130,10 +130,8 @@ const ModalForm: FunctionComponent<ModalFormProps> = ({
                 const tempLocalData: TableData[] = value;
                 tempLocalData?.push(formValues);
                 setLocalStorage("Table", tempLocalData);
-            } else {
-                value.push(formValues);
-                setLocalStorage("Table", value);
             }
+
             router.push(`?dataId=${uniqueId}`, { scroll: true });
 
             if (viewModalClick) {
