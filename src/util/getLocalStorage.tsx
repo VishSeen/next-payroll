@@ -4,14 +4,17 @@ import data from '../../config.json';
 
 
 export const getLocalStorage = (key: string): TableData[] => {
-    const value = localStorage.getItem(key);
+    let value: string | null = "";
+    let objValue = [];
 
-    if(value !== null) {
-        const objValue = JSON.parse(value);
-        return objValue;
-    } else {
-        return([]);
+    if(typeof window !== "undefined") {
+        value = localStorage.getItem(key);
+        if(value !== null) {
+            objValue = JSON.parse(value);
+        }
     }
+
+    return objValue
 }
 
 

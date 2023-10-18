@@ -23,7 +23,7 @@ const SideNav: FunctionComponent<SideNavProps> = ({
                 }
             </ul>
         </nav>
-    )
+    );
 }
 
 export default SideNav;

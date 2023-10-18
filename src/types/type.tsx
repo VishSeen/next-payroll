@@ -12,6 +12,7 @@ export type typeMenuItem = {
 
 export type NavItem = {
     title: string;
+    icon?: string | null;
     items?: NavSubItem[]
 }
 
@@ -21,9 +22,11 @@ export type NavSubItem = {
     icon?: string;
 }
 
+
 export type SvgElement = {
     color?: string;
 }
+
 
 export type TableData = {
     id: string;
@@ -40,7 +43,6 @@ export type TableCategory = {
     color: string;
 }
 
-
 export type Inputs = {
     id: number;
     label: string;
@@ -51,13 +53,6 @@ export type Inputs = {
     errorMessage?: string;
     option?: string[]
 }
-
-export type Crumb = {
-    icon?: string;
-    path: string;
-    href: string;
-}
-
 
 export type TypePath = {
     parent: typeMenuItem | null;
