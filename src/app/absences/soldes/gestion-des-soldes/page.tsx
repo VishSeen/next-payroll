@@ -14,7 +14,6 @@ export default function Gestion() {
 
     const deleteItemClick = (e) => {
         const id = e.target.closest('tr').getAttribute('id');
-
         const newValue: TableData[] = data.filter((item) => {
             return (item.id) !== id;
         });
