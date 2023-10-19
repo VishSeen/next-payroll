@@ -1,11 +1,28 @@
 # Submission Of Payroll app
 ## General
-This project has been build with Next JS 13.
+A dummy of a payroll app which includes basic functions like:
+- Routing
+- Adding data to an HTML table
+- Pixel perfect css (Desktop design provided)
 
 
+## Deployment
 
-## App Deployment
-The 
+The app has been deployed on both Vercel and Github pages.
+First option of deployment was Vercel as of how smooth the process is with Next and Vercel.
+But as required have deployed to Github Pages as well using the deployment actions provided by Github.
+
+- Github Pages: [Link](https://vishseen.github.io/next-payroll/)
+- Vercel App: [Link](https://next-payroll.vercel.app/)
+
+
+## Project Dependencies
+Kindly note that for dummy data a **Config.json** has been used in the ROOT of the project.
+- Next JS: **13 (App Router)**
+- Styling: **Styled Components**
+- Node version: **20.0.8**
+- Package manager: **NPM**
+- Lint: Eslint (comes with the Next js)
 
 
 ## Getting Started
