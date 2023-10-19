@@ -117,6 +117,8 @@ const ModalForm: FunctionComponent<ModalFormProps> = ({
     // handle on input change event
     const handleChange = (e: any) => {
         let target = e?.target;
+        setshowErrorMessage(false);
+
         setFormValues({ ...formValues, [target?.name]: target?.value })
     }
 
