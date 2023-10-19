@@ -125,11 +125,14 @@ const ModalForm: FunctionComponent<ModalFormProps> = ({
 
     const handleFormValidation = (e: any) => {
         e.preventDefault();
-
         const uniqueId = uuid();
-        setFormValues({ ...formValues, id: uniqueId });
 
         if (isValid()) {
+            const year = formValues.period.split("-")[0];
+            console.log(year);
+
+            setFormValues({ ...formValues, id: uniqueId, period: year });
+
             if (value !== undefined || value !== null) {
                 const tempLocalData: TableData[] = value;
                 tempLocalData?.push(formValues);

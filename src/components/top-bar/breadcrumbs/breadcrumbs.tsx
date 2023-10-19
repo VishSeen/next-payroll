@@ -26,7 +26,7 @@ const Breadcrumb: FunctionComponent = () => {
             <ul>
                 <li className="link-parent">
                     {
-                        config?.ui?.sideBar?.menuItems.map((item, i) => (
+                        config?.ui?.sideBar?.menuItems.map((item) => (
                             (item?.href.replace("/", "") === path[1]) ? (
                                 <>
                                     <Image
@@ -36,7 +36,7 @@ const Breadcrumb: FunctionComponent = () => {
                                         height={61}
                                     />
 
-                                    <Link href={`/${path[1]}`} key={i}>
+                                    <Link href={`/${path[1]}`}>
                                         {item?.title}
                                     </Link></>
                             ) : (
@@ -48,7 +48,7 @@ const Breadcrumb: FunctionComponent = () => {
 
                 {
                     path[2] && (
-                        config?.ui?.sideBar?.navItems.map((item, i) => (
+                        config?.ui?.sideBar?.navItems.map((item) => (
                             (item?.title.toLowerCase() === path[2]) ? (
                                 <>
                                     <span className="icon material-symbols-outlined">
