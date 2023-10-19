@@ -1,4 +1,12 @@
 # Submission Of Payroll app
+## General
+This project has been build with Next JS 13.
+
+
+
+## App Deployment
+The 
+
 
 ## Getting Started
 
