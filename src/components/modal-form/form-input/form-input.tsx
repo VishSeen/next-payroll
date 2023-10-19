@@ -10,11 +10,12 @@ const FormInput: FunctionComponent<FormInputProps> = ({
 }) => {
     return(
         <StyledFormInput className="form-input">
-            <label className="form-input__label">{inputs?.label}</label>
+            <label className="form-input__label" htmlFor={(inputs?.id).toString()}>{inputs?.label}</label>
 
             {
                 inputs?.type === "select" ? (
                     <select
+                        id={(inputs?.id).toString()}
                         style={poppins.style}
                         name={inputs?.name}
                         onChange={handleChange}
@@ -29,6 +30,7 @@ const FormInput: FunctionComponent<FormInputProps> = ({
                     </select>
                 ) : (
                     <input
+                        id={inputs?.id.toString()}
                         style={poppins.style}
                         className="form-input__input"
                         type={inputs?.type}
