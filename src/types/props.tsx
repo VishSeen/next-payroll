@@ -65,5 +65,5 @@ export type TableProps = {
     data: TableData[];
     editClick?: () => void;
     transferClick?: () => void;
-    deleteClick?: (e: any) => void;
+    deleteClick?: (e: React.MouseEvent) => void;
 }

@@ -97,6 +97,7 @@ const ModalForm: FunctionComponent<ModalFormProps> = ({
             const selectItem = removeDuplicate(value);
             setUsers(selectItem);
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
 

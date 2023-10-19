@@ -12,8 +12,9 @@ export default function Gestion() {
     const searchParams = useSearchParams()
     const dataId = searchParams.get('dataId');
 
-    const deleteItemClick = (e: any) => {
-        const id = e.target.closest('tr').getAttribute('id');
+    const deleteItemClick = (e: React.MouseEvent) => {
+        const target = e.target as HTMLElement;
+        const id = target?.closest('tr')?.getAttribute('id');
         const newValue: TableData[] = data.filter((item) => {
             return (item.id) !== id;
         });
