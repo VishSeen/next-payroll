@@ -6,6 +6,16 @@ A dummy of a payroll app which includes basic functions like:
 - Pixel perfect css (Desktop design provided)
 
 
+## Project Dependencies
+Kindly note that for dummy data a **Config.json** has been used in the ROOT of the project.
+- Next JS: **13 (App Router)**
+- Language: **Typescript**
+- Styling: **Styled Components**
+- Node version: **20.0.8**
+- Package manager: **NPM**
+- Lint: Eslint (comes with the Next js)
+
+
 ## Deployment
 
 The app has been deployed on both Vercel and Github pages.
@@ -15,14 +25,6 @@ But as required have deployed to Github Pages as well using the deployment actio
 - Github Pages: [Link](https://vishseen.github.io/next-payroll/)
 - Vercel App: [Link](https://next-payroll.vercel.app/)
 
-
-## Project Dependencies
-Kindly note that for dummy data a **Config.json** has been used in the ROOT of the project.
-- Next JS: **13 (App Router)**
-- Styling: **Styled Components**
-- Node version: **20.0.8**
-- Package manager: **NPM**
-- Lint: Eslint (comes with the Next js)
 
 
 ## Getting Started
