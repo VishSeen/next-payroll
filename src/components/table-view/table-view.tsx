@@ -7,9 +7,9 @@ import config from "../../../config.json";
 import { roboto } from "@/styles/fonts";
 import Image from "next/image";
 
-import icEdit from '../../../public/svg/table/button/ic-edit.svg';
-import icTransfer from '../../../public/svg/table/button/ic-transfer.svg';
-import icDelete from '../../../public/svg/table/button/ic-delete.svg';
+import icEdit from '../../../public/image/svg/table/button/ic-edit.svg';
+import icTransfer from '../../../public/image/svg/table/button/ic-transfer.svg';
+import icDelete from '../../../public/image/svg/table/button/ic-delete.svg';
 
 const TableView: FunctionComponent<TableProps> = ({
     data,

@@ -20,7 +20,7 @@ const SideMenuItem: FunctionComponent<SideMenuItemProps> = ({
                                 <li key={i}>
                                     <Link href={item?.href} onClick={click}>
                                         <Image
-                                            src={`/svg/side-bar-overlay/${item?.image?.src}`}
+                                            src={`/image/svg/side-bar-overlay/${item?.image?.src}`}
                                             alt={item?.image?.alt as string}
                                             width={75}
                                             height={100}

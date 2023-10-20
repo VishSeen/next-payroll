@@ -1,7 +1,7 @@
 import { SideMenuProps } from "@/types/props";
 import { FunctionComponent } from "react";
 import Image from 'next/image';
-import logo from '../../../../public/svg/Logo.svg';
+import logo from '../../../../public/image/svg/Logo.svg';
 import StyledSideMenuOverlay from "./style";
 import config from '../../../../config.json';
 import SideMenuItem from "../side-menu-item/side-menu-item";

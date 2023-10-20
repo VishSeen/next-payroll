@@ -30,7 +30,7 @@ const Breadcrumb: FunctionComponent = () => {
                             (item?.href.replace("/", "") === path[1]) ? (
                                 <>
                                     <Image
-                                        src={`/svg/side-bar-overlay/${item?.image?.src}`}
+                                        src={`/image/svg/side-bar-overlay/${item?.image?.src}`}
                                         alt={item?.image?.alt}
                                         width={60}
                                         height={61}
