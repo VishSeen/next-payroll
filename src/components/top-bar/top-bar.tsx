@@ -23,12 +23,12 @@ const TopBar: FunctionComponent = () => {
             <div className="right-bar">
                 <div className="setting-buttons">
                     <Button
-                        icon={`../../../public/image/svg/top-bar/${config?.ui?.topBar?.settingButtons[0]?.src}`}
+                        icon={`/svg/top-bar/${config?.ui?.topBar?.settingButtons[0]?.src}`}
                         alt={config?.ui?.topBar?.settingButtons[0]?.alt}
                     />
 
                     <Button
-                        icon={`../../../public/image/svg/top-bar/${config?.ui?.topBar?.settingButtons[1]?.src}`}
+                        icon={`/svg/top-bar/${config?.ui?.topBar?.settingButtons[1]?.src}`}
                         alt={config?.ui?.topBar?.settingButtons[1]?.alt}
                     />
                 </div>
