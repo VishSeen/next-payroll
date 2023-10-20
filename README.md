@@ -8,6 +8,7 @@ A dummy of a payroll app which includes basic functions like:
 
 ## Project Dependencies
 Kindly note that for dummy data a **Config.json** has been used in the ROOT of the project.
+As for saving data, local storage is being used.
 - Next JS: **13 (App Router)**
 - Language: **Typescript**
 - Styling: **Styled Components**
