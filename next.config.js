@@ -4,7 +4,7 @@ const nextConfig = {
     compiler: {
         styledComponents: true
     },
-    basePath: '/next-payroll/_next/static/media/',
+    basePath: '/next-payroll',
     images: {
         unoptimized: true
      }
