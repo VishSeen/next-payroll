@@ -14,10 +14,12 @@ export type SideBarProps  = {
 
 export type SideMenuProps = {
     isOpened: boolean;
+    click: () => void;
 }
 
 export type SideMenuItemProps = {
     items: typeMenuItem[];
+    click: () => void;
 }
 
 export type SideNavProps = {

@@ -10,7 +10,8 @@ import SideMenuItem from "../side-menu-item/side-menu-item";
 
 
 const SideMenu: FunctionComponent<SideMenuProps> = ({
-    isOpened
+    isOpened,
+    click
 }) => {
     return (
         <StyledSideMenuOverlay className={`menu-side__wrapper ${isOpened ? 'opened' : ''}`}>
@@ -22,7 +23,7 @@ const SideMenu: FunctionComponent<SideMenuProps> = ({
                     />
                 </div>
 
-                <SideMenuItem items={config?.ui?.sideBar?.menuItems} />
+                <SideMenuItem items={config?.ui?.sideBar?.menuItems} click={click} />
             </div>
         </StyledSideMenuOverlay>
     )

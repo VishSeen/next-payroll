@@ -7,7 +7,8 @@ import Link from "next/link";
 
 
 const SideMenuItem: FunctionComponent<SideMenuItemProps> = ({
-    items
+    items,
+    click
 }) => {
     return (
         <StyledSideMenuItem className="menu-items__wrapper">
@@ -17,7 +18,7 @@ const SideMenuItem: FunctionComponent<SideMenuItemProps> = ({
                         items.map((item, i) => {
                             return (
                                 <li key={i}>
-                                    <Link href={item?.href} >
+                                    <Link href={item?.href} onClick={click}>
                                         <Image
                                             src={`/svg/side-bar-overlay/${item?.image?.src}`}
                                             alt={item?.image?.alt as string}

@@ -20,17 +20,20 @@ const SideBar:FunctionComponent<SideBarProps> = ({
     openFormClick
 }) => {
     const [opened, setOpened] = useState<boolean>(false);
+    const openMenuOverlay = () => {
+        setOpened(!opened)
+    }
 
     return(
         <StyledSideBar className="side-bar__wrapper" >
-            <SideButton icon={ic_menu} isBlue={false} click={() => setOpened(!opened)} className="ic-burger"/>
+            <SideButton icon={ic_menu} isBlue={false} click={openMenuOverlay} className="ic-burger"/>
 
             <SideButton isBlue={true} href="/" text="Accueil" icon={ic_accueil}/>
 
             <SideButton isBlue={true} text="Ajouter" icon={ic_add} click={openFormClick}/>
 
 
-            <SideMenuOverlay isOpened={opened} />
+            <SideMenuOverlay isOpened={opened} click={openMenuOverlay}/>
 
             <div className="side-bar__nav-content">
                 <SideNav navItems={config?.ui?.sideBar?.navItems} />
