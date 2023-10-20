@@ -11,9 +11,14 @@ const StyledSideBar = styled.div`
 
     .img-background {
         position: absolute;
-        bottom: 0;
+        bottom: -111px;
         left: 0;
         right: 0;
+        z-index: 0;
+
+        @media screen and (min-height: 789px) {
+            bottom: 0;
+        }
     }
 
 
