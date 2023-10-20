@@ -24,7 +24,7 @@ The app has been deployed on both Vercel and Github pages.
 First option of deployment was Vercel as of how smooth the process is with Next and Vercel.
 But as required have deployed to Github Pages as well using the deployment actions provided by Github.
 
-- Vercel App: [Link](https://next-payroll.vercel.app/)
+- Vercel App: [Link](https://next-payroll.vercel.app/) ** Try Vercel if github pages has issues.
 - Github Pages: [Link](https://vishseen.github.io/next-payroll/)
 
 
