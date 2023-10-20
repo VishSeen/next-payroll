@@ -20,7 +20,7 @@ const SideMenuItem: FunctionComponent<SideMenuItemProps> = ({
                                 <li key={i}>
                                     <Link href={item?.href} onClick={click}>
                                         <Image
-                                            src={`/image/${item?.image?.src}`}
+                                            src={`/next-payroll/image/${item?.image?.src}`}
                                             alt={item?.image?.alt as string}
                                             width={75}
                                             height={100}
