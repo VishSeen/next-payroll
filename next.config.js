@@ -4,16 +4,9 @@ const nextConfig = {
     compiler: {
         styledComponents: true
     },
+    basePath: '/next-payroll/_next/static/media/',
     images: {
-        unoptimized: true,
-        remotePatterns: [
-            {
-                protocol: 'https',
-                hostname: '	vishseen.github.io',
-                port: '',
-                pathname: '/next-payroll/_next/static/media/**',
-            },
-        ]
+        unoptimized: true
      }
 }
 
