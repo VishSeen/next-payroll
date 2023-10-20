@@ -23,12 +23,12 @@ const TopBar: FunctionComponent = () => {
             <div className="right-bar">
                 <div className="setting-buttons">
                     <Button
-                        icon={`/image/${config?.ui?.topBar?.settingButtons[0]?.src}`}
+                        icon={`/next-payroll/image/${config?.ui?.topBar?.settingButtons[0]?.src}`}
                         alt={config?.ui?.topBar?.settingButtons[0]?.alt}
                     />
 
                     <Button
-                        icon={`/image/${config?.ui?.topBar?.settingButtons[1]?.src}`}
+                        icon={`/next-payroll/image/${config?.ui?.topBar?.settingButtons[1]?.src}`}
                         alt={config?.ui?.topBar?.settingButtons[1]?.alt}
                     />
                 </div>
