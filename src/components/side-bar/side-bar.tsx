@@ -6,10 +6,10 @@ import Image from "next/image";
 import SideMenuOverlay from "./side-menu-overlay/side-menu-overlay";
 import SideNav from "@/components/side-bar/side-nav/side-nav";
 import SideButton from "./side-button/side-button";
-import ic_menu from '../../../public/image/svg/side-bar-button/burger.svg';
-import ic_add from '../../../public/image/svg/side-bar-button/add.svg';
-import ic_accueil from '../../../public/image/svg/side-bar-button/accueil.svg';
-import ic_graphic from '../../../public/image/svg/side-bar/graphic.svg';
+import ic_menu from '../../../public/image/burger.svg';
+import ic_add from '../../../public/image/add.svg';
+import ic_accueil from '../../../public/image/accueil.svg';
+import ic_graphic from '../../../public/image/graphic.svg';
 
 import config from '../../../config.json';
 import { SideBarProps } from "@/types/props";

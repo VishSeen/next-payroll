@@ -16,7 +16,7 @@ const StyledSideBar = styled.div`
         right: 0;
         z-index: 0;
 
-        @media screen and (min-height: 789px) {
+        @media screen and (min-height: 950px) {
             bottom: 0;
         }
     }
