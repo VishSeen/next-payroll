@@ -3,7 +3,7 @@
 A dummy of a payroll app which includes basic functions like:
 - Routing
 - Adding data to an HTML table
-- Pixel perfect css (Desktop design provided)
+- Pixel perfect css (Desktop design provided) (1920 * 1080)
 
 
 ## Project Dependencies
