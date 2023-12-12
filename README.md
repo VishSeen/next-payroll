@@ -1,10 +1,10 @@
 # Submission Of Payroll app
 ## General
-A dummy of a payroll app which includes basic functions like:
+Technical test project of a dummy payroll app which includes basic functions like:
 - Routing
 - Adding data to an HTML table
 - Local Storage
-- Pixel perfect css (Desktop design provided) (1920 * 1080)
+- Pixel perfect css as per design provided (Desktop design provided) (1920 * 1080)
 
 
 ## Project Dependencies
